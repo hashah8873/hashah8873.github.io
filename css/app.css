@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+}
+body {
+  font-size: 1.6em;
+  color: #fff;
+  background: #444;
+
+}
+header {
+  width: 100%;
+  height: 600px;
+  background: #fff;
+}
+#about {
+  width: 100%;
+  min-height: 700px;
+  background: #999;
+
+}
+#aboutLeft {
+    width: 50%;
+    min-height: 700px;
+    background: #f00;
+    float: left;
+}
+#aboutRight {
+    width: 50%;
+    min-height: 700px;
+    background: #00f;
+    float: left;
+}
+footer {
+  width: 50%;
+  min-height: 700px;
+  background: #222;
+  
+}
