@@ -35,8 +35,8 @@ header {
     float: left;
 }
 footer {
-  width: 50%;
-  min-height: 700px;
+  width: 100%;
+  min-height: 100px;
   background: #222;
   
 }
