@@ -13,7 +13,7 @@ body {
 }
 header {
   width: 100%;
-  height: 200px;
+  height: 400px;
   background: url('../assets.images/headerbkg.jpg')
   font-size: 2em;
   text-align: center;
@@ -23,14 +23,13 @@ header {
   font-style: normal;
   text-shadow: 3px 3px 7px #000;
 }
-
-
+.pink {
+  color: #fdd;
 }
 #about {
   width: 100%;
   min-height: 700px;
   background: #999;
-
 }
 #aboutLeft {
     width: 50%;
