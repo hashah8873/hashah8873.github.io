@@ -26,16 +26,24 @@ header {
 .pink {
   color: #fdd;
 }
+.hashPic {
+width: 350px;
+border-radius: 50%;
+float: left;
+margin-right: 50px;
+}
 #about {
   width: 100%;
   min-height: 700px;
   background: #999;
+  
 }
 #aboutLeft {
     width: 50%;
     min-height: 700px;
     background: #999;
     float: left;
+    padding: 25px 50px;
 }
 #aboutRight {
     width: 50%;
