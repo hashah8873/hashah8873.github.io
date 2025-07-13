@@ -46,7 +46,11 @@ box-shadow: 3px 3px 7px #333;
     background: #999;
     float: left;
     padding: 25px 50px;
+    font-size: 1.1em;
 }
+    #aboutLeft > p {
+      margin-bottom: 25px;
+    }
 #aboutRight {
     width: 50%;
     min-height: 700px;
