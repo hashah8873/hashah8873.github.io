@@ -9,6 +9,13 @@ body {
   font-size: 1.6em;
   color: #fff;
   background: #444;
+  font-family: 'Orbitron', sans-serif;
+  line-height: 1.6;
+}
+h1, h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
 
 }
 header {
@@ -18,7 +25,7 @@ header {
   font-size: 2em;
   text-align: center;
   padding-top: 200px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Orbitron', sans-serif;
   font-weight: 400;
   font-style: normal;
   text-shadow: 3px 3px 7px #000;
@@ -50,8 +57,13 @@ box-shadow: 3px 3px 7px #333;
 #about {
   width: 100%;
   min-height: 700px;
-  background: #999;
+  background: linear-gradient(to right, #999, #777);
 }
+section, #about {
+  padding: 40px 60px;
+  margin-bottom: 50px;
+}
+
 #aboutLeft {
     width: 50%;
     min-height: 700px;
@@ -78,10 +90,17 @@ ul {
   margin-left: 75px;
   font-size: 1em;
 }
+ul li {
+  transition: transform 0.3s;
+}
+ul li:hover {
+  transform: scale(1.05);
+}
+
 footer {
   width: 100%;
   min-height: 100px;
-  background: #111;
+  background-color: #222;
   text-align: center;
   padding-top: 18px;
   border-top: 1px solid #fff;
@@ -112,4 +131,15 @@ nav ul li a {
 
 nav ul li a:hover {
   background: rgba(255, 255, 255, 0.3);
+}
+@media (max-width: 768px) {
+  #aboutLeft, #aboutRight {
+    width: 100%;
+    float: none;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
 }
