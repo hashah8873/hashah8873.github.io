@@ -1,0 +1,303 @@
+/* =====================
+   Reset & Base
+===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0f0f0f;
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+/* =====================
+   Navbar
+===================== */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(15,15,15,0.95);
+  border-bottom: 1px solid #333;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.navbar .logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #6b4cff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: #6b4cff;
+}
+
+/* =====================
+   Buttons
+===================== */
+.btn {
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: 1px solid #6b4cff;
+  color: #6b4cff;
+  display: inline-block;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background: #6b4cff;
+  color: #0f0f0f;
+  transform: translateY(-3px);
+  box-shadow: 0 0 10px #6b4cff;
+}
+
+/* =====================
+   Home / Header
+===================== */
+.home-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  padding-top: 70px;
+}
+
+.profile-wrapper {
+  max-width: 700px;
+}
+
+.profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 4px solid #6b4cff;
+  margin-bottom: 15px;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(107,76,255,0.5);
+}
+
+.profile-name {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.profile-role {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+.links-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* =====================
+   Sections
+===================== */
+.section-container {
+  padding: 100px 20px 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #6b4cff;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+/* =====================
+   About Page
+===================== */
+.courses-list {
+  padding-left: 20px;
+  color: #ccc;
+  margin-top: 15px;
+}
+
+.courses-list li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+/* =====================
+   Skills Page
+===================== */
+.skill-list li {
+  margin-bottom: 12px;
+  color: #ccc;
+}
+
+.skill-level {
+  display: block;
+  height: 10px;
+  background: #6b4cff;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+/* =====================
+   Projects
+===================== */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  align-items: stretch;
+}
+
+.project-card {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  border-color: #6b4cff;
+  box-shadow: 0 0 20px rgba(107,76,255,0.4);
+}
+
+/* ⭐ Highlight Capstone */
+.project-card:first-child {
+  border: 1px solid #6b4cff;
+  box-shadow: 0 0 15px rgba(107,76,255,0.5);
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 1px solid #333;
+}
+
+.project-info {
+  padding: 15px;
+}
+
+.project-info h3 {
+  color: #6b4cff;
+}
+
+.project-info p {
+  color: #ccc;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+/* =====================
+   Contact Section
+===================== */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.contact-info ul {
+  list-style: none;
+}
+
+.contact-info ul li {
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+.contact-info ul li a {
+  color: #6b4cff;
+  text-decoration: none;
+}
+
+.contact-info ul li a:hover {
+  color: #fff;
+}
+
+/* =====================
+   Contact Form
+===================== */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background: #1a1a1a;
+  color: #f5f5f5;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #6b4cff;
+  outline: none;
+}
+
+/* =====================
+   Footer
+===================== */
+footer {
+  padding: 25px 20px;
+  text-align: center;
+  border-top: 1px solid #333;
+  margin-top: 50px;
+  color: #ccc;
+}
+
+/* =====================
+   Responsive
+===================== */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .home-section {
+    padding-top: 100px;
+  }
+}
